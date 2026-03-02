@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amicus IPR</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+
+      #root {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #android-version {
+        font-size: 10px;
+        color: #111111;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="android-version"></div>
+    </div>
+
+    <script>
+      const userAgent = navigator.userAgent || "";
+      const match = userAgent.match(/Android\s([0-9]+(?:\.[0-9]+)?)/i);
+      const version = match ? match[1] : "Unknown";
+      document.getElementById("android-version").textContent = `Android ${version}`;
+    </script>
+  </body>
+</html>

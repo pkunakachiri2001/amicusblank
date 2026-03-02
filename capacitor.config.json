@@ -1,0 +1,6 @@
+{
+  "appId": "com.amicusipr.app",
+  "appName": "Amicus IPR",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,16 @@
+{
+  "name": "amicus-ipr-blank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal blank Amicus IPR Android app",
+  "scripts": {
+    "cap:copy": "npx cap copy android",
+    "cap:sync": "npx cap sync android",
+    "android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.1",
+    "@capacitor/cli": "^8.0.1",
+    "@capacitor/core": "^8.0.1"
+  }
+}
